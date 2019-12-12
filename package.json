@@ -3,10 +3,7 @@
   "version": "0.1.1-1",
   "description": "React hook for using state with validation",
   "main": "dist/index.js",
-  "files": [
-    "dist",
-    "src"
-  ],
+  "files": ["dist"],
   "scripts": {
     "docs": "build-storybook -o docs",
     "dist": "rm -rf dist && babel src --out-dir dist --ignore **/*.test.js --extensions '.js,.ts'",
