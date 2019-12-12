@@ -1,0 +1,62 @@
+{
+  "name": "react-use-validated-input",
+  "version": "0.1.0",
+  "description": "React hook for using state with validation",
+  "main": "dist/index.js",
+  "scripts": {
+    "docs": "build-storybook -o docs",
+    "dist": "rm -rf dist && babel src --out-dir dist --ignore **/*.test.js --extensions '.js,.ts'",
+    "dist:watch": "babel src --out-dir dist --watch --ignore **/*.test.js --extensions '.js,.ts'",
+    "postpublish": "git push --no-verify && git push --tags",
+    "prepublishOnly": "npm run dist",
+    "start": "start-storybook -p 6006",
+    "test": "jest",
+    "version": "npm run docs && git add -A docs"
+  },
+  "keywords": [
+    "react",
+    "hook",
+    "validation"
+  ],
+  "author": "bestguy",
+  "license": "MIT",
+  "repository": "https://github.com/bestguy/react-use-validated-input",
+  "dependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "validate.js": "^0.13.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.4",
+    "@babel/core": "^7.7.4",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-proposal-export-namespace-from": "^7.7.4",
+    "@babel/plugin-proposal-function-sent": "^7.7.4",
+    "@babel/plugin-proposal-json-strings": "^7.7.4",
+    "@babel/plugin-proposal-numeric-separator": "^7.7.4",
+    "@babel/plugin-proposal-throw-expressions": "^7.7.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.7.4",
+    "@babel/plugin-syntax-import-meta": "^7.7.4",
+    "@babel/plugin-transform-react-jsx": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-react": "^7.7.4",
+    "@babel/preset-typescript": "^7.7.4",
+    "@babel/register": "^7.7.4",
+    "@storybook/addon-actions": "^5.2.6",
+    "@storybook/addon-links": "^5.2.6",
+    "@storybook/addons": "^5.2.6",
+    "@storybook/react": "^5.2.6",
+    "@testing-library/react": "^9.3.2",
+    "babel-eslint": "^10.0.3",
+    "babel-jest": "^24.9.0",
+    "babel-loader": "^8.0.6",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-config-import": "^0.13.0",
+    "jest": "^24.9.0",
+    "prism-react-renderer": "^1.0.2",
+    "raw-loader": "^4.0.0",
+    "reactstrap": "^8.1.1",
+    "regenerator-runtime": "^0.13.3"
+  }
+}
