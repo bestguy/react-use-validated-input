@@ -12,7 +12,7 @@
     "prepublishOnly": "npm run dist",
     "start": "start-storybook -p 6006",
     "test": "jest",
-    "version": "npm run docs && git add -A docs dist"
+    "version": "npm run docs && git add -A docs && git add -A dist"
   },
   "keywords": [
     "react",
