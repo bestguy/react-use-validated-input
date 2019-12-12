@@ -3,6 +3,10 @@
   "version": "0.1.1-0",
   "description": "React hook for using state with validation",
   "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
     "docs": "build-storybook -o docs",
     "dist": "rm -rf dist && babel src --out-dir dist --ignore **/*.test.js --extensions '.js,.ts'",
@@ -11,7 +15,7 @@
     "prepublishOnly": "npm run dist",
     "start": "start-storybook -p 6006",
     "test": "jest",
-    "version": "npm run docs && git add -A docs"
+    "version": "npm run docs && git add -A docs dist"
   },
   "keywords": [
     "react",
